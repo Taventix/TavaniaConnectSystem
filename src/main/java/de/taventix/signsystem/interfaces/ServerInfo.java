@@ -2,14 +2,15 @@ package de.taventix.signsystem.interfaces;
 
 public abstract interface ServerInfo {
 
-    public abstract int getOnlinePlayers();
+    int getOnlinePlayers();
 
-    public abstract int getMaxPlayers();
+    int getMaxPlayers();
 
-    public abstract boolean isOnline();
+    boolean isOnline();
 
-    public abstract String getMotd();
+    String getMotd();
 
-    public abstract long getPing();
+    long getPing();
+
 
 }

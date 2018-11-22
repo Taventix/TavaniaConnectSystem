@@ -2,14 +2,14 @@ package de.taventix.signsystem.interfaces;
 
 public abstract interface SignDesign {
 
-    public abstract void setOnline(ServerInfo paramServerInfo, DynamicSign paramDynamicSign, String paramString);
+    void setOnline(ServerInfo info, String server);
 
-    public abstract void setOnlineP(ServerInfo paramServerInfo, DynamicSign paramDynamicSign, String paramString);
+    void setOnlineP(ServerInfo info, String server);
 
-    public abstract void setOffline(DynamicSign paramDynamicSign);
+    void setOffline();
 
-    public abstract void setWartung(DynamicSign paramDynamicSign);
+    void setWartung();
 
-    public abstract String[] getClickPacket();
+    String[] getClickPacket();
 
 }
